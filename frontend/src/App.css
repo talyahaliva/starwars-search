@@ -1,0 +1,102 @@
+/* עיצוב חלל למלחמת הכוכבים */
+:root {
+  --sw-yellow: #FFE81F;
+  --sw-black: #000000;
+  --glass: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  background-color: var(--sw-black);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  background-image: 
+      radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+      radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+      radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px);
+  background-size: 550px 550px, 350px 350px, 250px 250px;
+  background-position: 0 0, 40px 60px, 130px 270px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--sw-yellow);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px var(--sw-yellow);
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+input {
+  background: var(--glass);
+  border: 2px solid var(--sw-yellow);
+  padding: 1rem;
+  color: var(--sw-yellow);
+  font-size: 1.2rem;
+  border-radius: 8px;
+  width: 60%;
+  outline: none;
+}
+
+button {
+  background: var(--sw-yellow);
+  color: black;
+  border: none;
+  padding: 0 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--sw-yellow);
+}
+
+.card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.history-panel {
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+.history-item {
+  background: #222;
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #444;
+}
+
+.history-item:hover {
+  border-color: var(--sw-yellow);
+  color: var(--sw-yellow);
+}
